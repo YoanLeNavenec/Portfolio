@@ -1,0 +1,12 @@
+<div>
+    <a class="topmenu" href="{{ site.url }}">Home</a>
+    {%- if "about.md" -%}
+        <a class="topmenu" href="{{ site.baseurl }}/about/">About Me</a>
+    {%- endif -%}
+    {%- if "project.md" -%}
+        <a class="topmenu" href="{{ site.baseurl }}/project/">My Projects</a>
+    {%- endif -%}
+    {%- if "Contact.md" -%}
+        <a class="topmenu" href="{{ site.baseurl }}/Contact/">Contact</a>
+    {%- endif -%}
+</div>

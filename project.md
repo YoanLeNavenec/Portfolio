@@ -6,9 +6,9 @@ title: Project
 {% for projects in site.projects %}
 <h2>
 <a href="{{project.url}}">
-  {{ projects.Name}}
-  {{ projects.Date}}
-</a>
+  {{ projects.Name}} <br>
+  {{ projects.Languages}}
+</a> 
 </h2>
 {{project.content|markdownify}}
 {% endfor %}

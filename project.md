@@ -3,12 +3,10 @@ layout: page
 title: Project
 ---
 # My Projects
-{% for projects in site.projects %}
-<h2>
-<a href="{{project.url}}">
-  {{ projects.Name}} <br>
-  {{ projects.Languages}}
-</a> 
-</h2>
-{{project.content|markdownify}}
-{% endfor %}
+
+## Klivio Integration
+Languages : HTML, CSS
+Other : Git, Github Pages
+Redoing the entirety of the front-end of a fictive website off a Figma model, then hosting it on GitHub Pages.
+
+### Demo Link:

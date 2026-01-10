@@ -38,3 +38,31 @@ permalink: /about/
       Apprenticeship as a waiter
       Taking orders, serving customers, cleanup and stockup of the bar
 
+
+### Diplomas:
+
+* 2027 
+  * RNCP Title Web Developper 
+    Epitech Moulins (03000)
+
+* 2014 
+  * Brevet des collèges 
+    Collège Emile Guillaumin (03000)
+
+
+### Dev Languages:
+
+* HTML/CSS
+* JavaScript
+* PHP
+
+### Soft Skills:
+
+* Team Work
+* Patience
+* Good listener
+
+### Languages:
+
+* English (Bilingual)
+* French (Bilingual)

@@ -1,0 +1,381 @@
+@charset "UTF-8";
+@import url("/assets/fonts/teachers-webfonts/Teachers-Medium.woff2");
+@import url("/assets/fonts/platyli-webfonts/Platypi-Medium.woff2");
+@font-face {
+  font-family: "Teachers";
+  src: url(/assets/fonts/teachers-webfonts/Teachers-Medium.woff2);
+}
+@font-face {
+  font-family: "Platypi";
+  src: url(/assets/fonts/platyli-webfonts/Platypi-Light.woff2);
+}
+html {
+  font-family: "Teachers", "Ubuntu";
+  font-size: 18px;
+  color: #153B13;
+  background-color: #FAFAF2;
+  /*  background: linear-gradient(to bottom right, #edf1d7, $bg-color, $bg-color)*/
+}
+
+body {
+  min-height: 100vh;
+  margin: 15px;
+}
+
+#bg-flower {
+  display: block;
+  height: 100vh;
+  width: 35vw;
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  z-index: -10;
+  background-image: url(/assets/imgs/lilium_small.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  filter: opacity(0.3);
+}
+
+@media only screen and (max-width: 1050px) {
+  #bg-flower {
+    filter: opacity(0.08);
+    background-size: 100%;
+    width: 75vw;
+  }
+}
+.site-title {
+  display: block;
+  text-align: right;
+  font-family: "Platypi", "Georgia";
+  font-weight: 400;
+  padding: 0px 30px 20px 30px;
+  color: #335730;
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+main {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: 33%;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  line-height: 1.6em;
+}
+
+footer {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: 33%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1.3em;
+}
+footer a {
+  color: #335730;
+}
+
+@media screen and (max-width: 1050px) {
+  .site-title {
+    text-align: center;
+  }
+  main, footer {
+    margin-right: auto;
+  }
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  font-family: "Platypi", "Georgia";
+  line-height: 1.2em;
+}
+main h1 a, main h2 a, main h3 a, main h4 a, main h5 a, main h6 a {
+  background-color: transparent;
+  border-bottom: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: inherit;
+}
+main h1 a:hover, main h2 a:hover, main h3 a:hover, main h4 a:hover, main h5 a:hover, main h6 a:hover {
+  background-color: transparent;
+  border: transparent;
+}
+main a {
+  color: #153B13;
+  background-color: #BCD4B1;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: solid 2px #725648;
+  text-decoration: none;
+}
+main a:hover {
+  text-decoration: none;
+  border-bottom: solid 2px #644536;
+  background-color: #8CA984;
+  transition: all 0.7s;
+}
+main h1 {
+  color: #335730;
+  padding-bottom: 0.5em;
+  font-size: 2em;
+  margin-top: 26px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #BCD4B1;
+}
+main h2 {
+  font-weight: 300;
+  color: #8CA984;
+  font-size: 1.7em;
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+main h3 {
+  font-weight: 300;
+  color: #8CA984;
+  font-size: 1.3em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+main h4 {
+  color: #8CA984;
+  font-family: "Teachers", "Ubuntu";
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+main h5 {
+  color: #153B13;
+  font-family: "Teachers", "Ubuntu";
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin: 4px auto;
+}
+main h6 {
+  color: #153B13;
+  font-family: "Teachers", "Ubuntu";
+  font-size: 1em;
+}
+main hr {
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: none;
+  height: 1px;
+  background-color: #BCD4B1;
+}
+main img {
+  display: block;
+  max-width: 100%;
+  box-shadow: 2px 2px 4px #BCD4B1;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main img[src*="#noshadow"] {
+  box-shadow: none;
+}
+main p {
+  font-family: "Teachers", "Ubuntu";
+  font-weight: 400;
+  color: #153B13;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+main blockquote {
+  margin: 20px 0px;
+  background-color: #BCD4B1;
+  border-radius: 5px;
+}
+main blockquote p {
+  font-weight: 300;
+  font-size: 1.2em;
+  letter-spacing: -0.04em;
+  font-style: italic;
+  padding: 25px 35px 30px 35px;
+}
+main blockquote p::before {
+  content: "“";
+  margin-right: 15px;
+  font-size: 2.5em;
+  color: #725648;
+}
+main code {
+  background-color: rgb(247, 247, 177);
+  border-radius: 5px;
+  font-size: 0.8em;
+  padding: 3px 5px;
+}
+
+input.task-list-item-checkbox {
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: 80px;
+  color: #8CA984;
+}
+
+/** Archives style **/
+h2.archive-title {
+  margin: 60px auto 40px;
+}
+
+ul.post-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+ul.post-list li {
+  flex-grow: 1;
+  min-width: 200px;
+  width: 20%;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 5px #ccc;
+}
+ul.post-list li .overlay {
+  background-color: rgba(250, 250, 242, 0.7176470588);
+  width: auto;
+  height: -webkit-fill-available;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ul.post-list li .overlay .post-date {
+  font-size: 0.8em;
+}
+ul.post-list li .overlay .post-taxonomies {
+  font-size: 0.9em;
+}
+ul.post-list li .overlay h4 {
+  font-family: "Platypi", "Georgia";
+  margin: 10px 0px;
+  line-height: 1.2em;
+}
+ul.post-list li .overlay h4 a {
+  color: #644536;
+}
+
+#categories-list {
+  margin: 60px auto;
+}
+
+#tags-list ul, #categories-list ul {
+  columns: 3;
+  list-style: none;
+  padding: 0px;
+}
+
+.post-taxonomies .separator:last-of-type {
+  display: none;
+}
+
+.listing a {
+  background-color: transparent;
+  border-bottom: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.listing a:hover {
+  background-color: transparent;
+  border: transparent;
+}
+
+nav {
+  display: block;
+  text-align: right;
+  padding: 10px 30px;
+}
+
+@media screen and (max-width: 1050px) {
+  nav {
+    text-align: center;
+  }
+}
+.topmenu {
+  font-family: "Teachers", "Ubuntu";
+  font-size: 18px;
+  color: #8CA984;
+  line-height: 1.4em;
+  text-decoration: none;
+  margin: 10px;
+}
+.topmenu:hover {
+  color: #153B13;
+  transition: all 0.7s;
+}
+.topmenu:last-of-type {
+  margin-right: 0px;
+}
+
+.sidebar {
+  height: auto;
+  max-width: 330px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  text-align: right;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+.sidebar a {
+  color: #153B13;
+  background-color: #BCD4B1;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: solid 2px #725648;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: none;
+  border-bottom: solid 2px #644536;
+  background-color: #8CA984;
+  transition: all 0.7s;
+}
+.sidebar h3 {
+  font-family: "Platypi", "Georgia";
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #8CA984;
+  margin: 10px;
+}
+.sidebar p {
+  font-family: "Teachers", "Ubuntu";
+  line-height: 1.4;
+  font-size: 0.9em;
+  color: #8CA984;
+}
+.sidebar .links {
+  padding: 0px;
+}
+.sidebar .links li {
+  font-size: 0.9em;
+  margin: 5px 0px;
+  list-style: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .sidebar {
+    position: relative;
+    max-width: 1050px;
+    padding-top: 15px;
+    padding-right: 3%;
+    padding-left: 3%;
+    text-align: center;
+    border-top: solid 2px #BCD4B1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
